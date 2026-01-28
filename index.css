@@ -1,0 +1,129 @@
+/* 
+  GLOBAL STYLES
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --body-text: #374151;
+  --body-text-muted: #DFDDDD;
+  --white: #fff;
+  --border-color: #ccc;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+  color: var(--body-text);
+}
+
+/* 
+  HEADER
+*/
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), no-repeat center/cover url('./img/hero-bg.png');
+  /* padding: 2em 0 2.3em 0; */
+  height: 18vh;
+  display: flex;
+  align-items: center;
+}
+
+header .inner-container {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+header .nav-btn {
+  text-decoration: none;
+  color: var(--white);
+}
+
+header .nav-btn:hover, 
+header .nav-btn:focus {
+  text-decoration: underline;
+}
+
+header .search-bar {
+  display: flex;
+  position: absolute;
+  bottom: -3.5em;
+  width: 100%;
+}
+
+header input[type="search"] {
+  width: 100%;
+  border-radius: 6px 0 0 6px;
+  background-color: white;
+  background-image: url("https://www.w3schools.com/css/searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+header input[type="search"],
+header .search-btn {
+  border: 1px solid var(--border-color);
+  font-size: 1rem;
+}
+
+header .search-btn {
+  padding: 0.75em 2.5em;
+  border-radius: 0 6px 6px 0;
+  border-left: none;
+  color: #333;
+}
+
+/* 
+  MAIN
+*/
+
+main {
+  display: flex;
+  min-height: 80vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+main .empty-list,
+main .no-search-results {
+  align-self: center;
+  justify-self: center;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--body-text-muted);
+}
+
+
+/* 
+  UTILITY
+*/
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
