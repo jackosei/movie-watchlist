@@ -33,8 +33,8 @@
       </div>
     </header>
     <main>
-          <div class="container">
-        <section class="empty-list ">
+      <div class="container">
+        <section class="empty-list hidden">
           <img src="./img/movie-icon.svg" alt="" />
           <p>Start exploring</p>
         </section>
@@ -43,7 +43,33 @@
             Unable to find what you’re looking for. Please try another search.
           </p>
         </section>
-    </div>
-      </main>
+        <section class="movie-list">
+          <div class="container">
+            <div class="movie-card">
+              <img src="./img/Blade-Runner.avif" alt="" class="movie-poster" />
+              <div class="movie-info">
+                <div class="movie-header">
+                  <h2 class="movie-title">Blade Runner</h2>
+                  <span class="movie-rating">8.1</span>
+                </div>
+                <div class="movie-meta">
+                  <p class="movie-runtime">117 min</p>
+                  <p class="movie-genre">Action, Drama, Sci-fi</p>
+                  <button class="add-watchlist-btn">
+                    <img src="./img/add-icon.svg" alt="">
+                    <span>Watchlist</span>
+                  </button>
+                </div>
+                <p class="movie-summary">
+                  A blade runner must pursue and terminate four replicants who
+                  stole a ship in space, and have returned to Earth to find
+                  their creator.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
